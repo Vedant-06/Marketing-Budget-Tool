@@ -7,8 +7,6 @@ from .optimization import calculate_budget_allocation
 
 budget_bp = Blueprint('budget', __name__)
 
-# Gemini Key : AIzaSyBZgSRG_ZNhGO3KkpKzF5iGx2OISewKWBE
-
 def extract_citation_number(text):
     matches = re.findall(r"\[([^\]]+)\]", text)
     return [int(match) for match in matches if match.isdigit()]
